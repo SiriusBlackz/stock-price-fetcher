@@ -1,7 +1,7 @@
 import yfinance as yf
 
 # Define stock tickers to fetch
-tickers = ["AAPL", "MSFT", "GOOGL", "TSLA"]
+tickers = ["AAPL", "MSFT", "GOOGL", "TSLA", "FAKESYMBOL123"] 
 
 # ANSI color codes for highlighting
 GREEN = '\033[92m'
