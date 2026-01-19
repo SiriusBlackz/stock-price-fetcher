@@ -1,7 +1,19 @@
+import os
 import yfinance as yf
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API key from environment
+stock_api_key = os.getenv('STOCK_API_KEY')
+if stock_api_key:
+    print(f"STOCK_API_KEY loaded: {stock_api_key[:4]}****")
+else:
+    print("Warning: STOCK_API_KEY not found in environment")
 
 # Define stock tickers to fetch
-tickers = ["AAPL", "MSFT", "GOOGL", "TSLA", "FAKESYMBOL123"] 
+tickers = ["AAPL", "MSFT", "GOOGL", "TSLA", "AMZN"] 
 
 # ANSI color codes for highlighting
 GREEN = '\033[92m'
